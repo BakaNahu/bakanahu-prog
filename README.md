@@ -52,3 +52,7 @@
 
 <div align="center">
 </div>
+
+<!-- POKEMON_TEAM_START -->
+<table align="center"><tr><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/376.png" alt="Metagross" width="70" /><br><sub><b>Metagross</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/44.png" alt="Gloom" width="70" /><br><sub><b>Gloom</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/884.png" alt="Duraludon" width="70" /><br><sub><b>Duraludon</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/379.png" alt="Registeel" width="70" /><br><sub><b>Registeel</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/969.png" alt="Glimmet" width="70" /><br><sub><b>Glimmet</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/15.png" alt="Beedrill" width="70" /><br><sub><b>Beedrill</b></sub></td></tr></table>
+<!-- POKEMON_TEAM_END -->
