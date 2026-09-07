@@ -1,15 +1,14 @@
 import requests
 import random
-import re
 
 API_URL = "https://digi-api.com/api/v1/digimon/"
 
 def get_random_digimons():
     digimons = []
-    # Buscamos 3 IDs al azar
-    ids = random.sample(range(1, 1000), 3)
-    
-    for d_id in ids:
+    intentos = 0
+    while len(digimons) < 3 and intentos < 20:
+        intentos += 1
+        d_id = random.randint(1, 1000)
         try:
             response = requests.get(f"{API_URL}{d_id}")
             if response.status_code == 200:
@@ -32,13 +31,12 @@ def get_random_digimons():
                     "attribute": attribute
                 })
         except Exception as e:
-            print(f"Error buscando el ID {d_id}: {e}")
+            pass
             
     return digimons
 
 def generate_html(digimons):
-    # Armamos la tabla horizontal con cajas de colores para cada Digimon
-    html = '<table align="center">\n  <tr>\n'
+    html = '\n<table align="center">\n  <tr>\n'
     for d in digimons:
         html += f'''    <td align="center" width="160" style="border: 2px solid #ff7b00; background-color: #fff4e6; border-radius: 10px; padding: 10px;">
       <img src="{d['img']}" width="90" alt="{d['name']}"><br>
@@ -54,19 +52,30 @@ def update_readme(new_content):
     with open('README.md', 'r', encoding='utf-8') as file:
         readme = file.read()
 
-    # Patrón actualizado con los comentarios exactos de tu README
-    pattern = r'(\n).*?(\n)'
-    # Usamos re.sub para reemplazar lo que haya en el medio
-    updated_readme = re.sub(pattern, r'\g<1>' + new_content + r'\g<2>', readme, flags=re.DOTALL)
+    # Etiquetas exactas
+    start_marker = ""
+    end_marker = ""
 
-    with open('README.md', 'w', encoding='utf-8') as file:
-        file.write(updated_readme)
+    # Partición exacta a prueba de fallos
+    if start_marker in readme and end_marker in readme:
+        top_part = readme.split(start_marker)[0]
+        bottom_part = readme.split(end_marker)[1]
+        
+        updated_readme = top_part + start_marker + new_content + end_marker + bottom_part
+        
+        with open('README.md', 'w', encoding='utf-8') as file:
+            file.write(updated_readme)
+        print("¡README.md actualizado con éxito!")
+    else:
+        print("No se encontraron las etiquetas en el README.md. No se hicieron cambios.")
 
 if __name__ == "__main__":
+    print("Buscando Digimons...")
     digi_data = get_random_digimons()
+    
     if len(digi_data) == 3:
+        print("¡Se encontraron 3 Digimons! Actualizando README...")
         html_table = generate_html(digi_data)
         update_readme(html_table)
-        print("¡README.md actualizado con éxito con los Digimons!")
     else:
-        print("Hubo un problema trayendo la información de la API.")
+        print(f"Error: La API falló y solo trajo {len(digi_data)} Digimons.")
