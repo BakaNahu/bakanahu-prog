@@ -5,11 +5,16 @@ on:
     branches:
       - main
   schedule:
-    # Se ejecuta automáticamente todos los días a las 12 PM UTC
-    - cron: '0 12 * * *' 
-    
+    # Lo pasamos a las 12:05 para que corra 5 minutos después y no choque con tu script de Pokémon
+    - cron: '5 12 * * *' 
+
 permissions:
   contents: write
+
+# Esto le avisa a GitHub que si hay varias ejecuciones intentando arrancar, cancele las viejas y deje solo la última. ¡Chau conflictos!
+concurrency:
+  group: digimon-update
+  cancel-in-progress: true
 
 jobs:
   update-readme:
@@ -31,9 +36,8 @@ jobs:
 
       - name: Commitear los cambios
         run: |
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git add README.md
-            git commit -m "¡Nuevos Digimons en el perfil! 💻" || exit 0
-            git pull --rebase origin main
-            git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "¡Nuevos Digimons en el perfil! 💻" || exit 0
+          git push
