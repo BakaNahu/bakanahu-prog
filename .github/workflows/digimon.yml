@@ -7,6 +7,9 @@ on:
   schedule:
     # Se ejecuta automáticamente todos los días a las 12 PM UTC
     - cron: '0 12 * * *' 
+    
+permissions:
+  contents: write
 
 jobs:
   update-readme:
