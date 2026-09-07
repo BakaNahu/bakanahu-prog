@@ -1,20 +1,12 @@
 name: Update Digimon README
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: # Esto te agrega un botón en GitHub para correrlo cuando quieras
   schedule:
-    # Lo pasamos a las 12:05 para que corra 5 minutos después y no choque con tu script de Pokémon
-    - cron: '5 12 * * *' 
+    - cron: '5 12 * * *' # Corre de forma automática y desfasada del de Pokémon
 
 permissions:
   contents: write
-
-# Esto le avisa a GitHub que si hay varias ejecuciones intentando arrancar, cancele las viejas y deje solo la última. ¡Chau conflictos!
-concurrency:
-  group: digimon-update
-  cancel-in-progress: true
 
 jobs:
   update-readme:
@@ -40,5 +32,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "¡Nuevos Digimons en el perfil! 💻" || exit 0
-          git pull --rebase origin main
           git push
