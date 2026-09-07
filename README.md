@@ -43,7 +43,10 @@
 <p align="center">Generado automáticamente cada día a la medianoche</p>
 
 <div align="center">
-  </div>
+<!-- POKEMON_TEAM_START -->
+<table align="center"><tr><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/878.png" alt="Cufant" width="70" /><br><sub><b>Cufant</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/872.png" alt="Snom" width="70" /><br><sub><b>Snom</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/693.png" alt="Clawitzer" width="70" /><br><sub><b>Clawitzer</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/821.png" alt="Rookidee" width="70" /><br><sub><b>Rookidee</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/782.png" alt="Jangmo-o" width="70" /><br><sub><b>Jangmo-o</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/407.png" alt="Roserade" width="70" /><br><sub><b>Roserade</b></sub></td></tr></table>
+<!-- POKEMON_TEAM_END -->
+</div>
 
 <br />
 
@@ -51,8 +54,7 @@
 <p align="center">Generado automáticamente cada día</p>
 
 <div align="center">
-</div>
+<!-- DIGIMON_TEAM_START -->
 
-<!-- POKEMON_TEAM_START -->
-<table align="center"><tr><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/697.png" alt="Tyrantrum" width="70" /><br><sub><b>Tyrantrum</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/839.png" alt="Coalossal" width="70" /><br><sub><b>Coalossal</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/250.png" alt="Ho-oh" width="70" /><br><sub><b>Ho-oh</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/931.png" alt="Squawkabilly-green-plumage" width="70" /><br><sub><b>Squawkabilly-green-plumage</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/51.png" alt="Dugtrio" width="70" /><br><sub><b>Dugtrio</b></sub></td><td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/sprites/pokemon/132.png" alt="Ditto" width="70" /><br><sub><b>Ditto</b></sub></td></tr></table>
-<!-- POKEMON_TEAM_END -->
+<!-- DIGIMON_TEAM_END -->
+</div>
