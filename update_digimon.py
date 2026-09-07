@@ -52,16 +52,22 @@ def update_readme(new_content):
     with open('README.md', 'r', encoding='utf-8') as file:
         readme = file.read()
 
-    # Etiquetas exactas
-    start_marker = ""
-    end_marker = ""
+    start_marker = "<!-- DIGIMON_TEAM_START -->"
+    end_marker = "<!-- DIGIMON_TEAM_END -->"
 
-    # Partición exacta a prueba de fallos
-    if start_marker in readme and end_marker in readme:
-        top_part = readme.split(start_marker)[0]
-        bottom_part = readme.split(end_marker)[1]
+    # Buscamos la posición exacta de las etiquetas
+    start_idx = readme.find(start_marker)
+    end_idx = readme.find(end_marker)
+
+    if start_idx != -1 and end_idx != -1:
+        # Movemos el cursor justo después de la etiqueta de inicio
+        start_idx += len(start_marker)
         
-        updated_readme = top_part + start_marker + new_content + end_marker + bottom_part
+        # Cortamos y pegamos el texto usando las posiciones
+        top_part = readme[:start_idx]
+        bottom_part = readme[end_idx:]
+        
+        updated_readme = top_part + new_content + bottom_part
         
         with open('README.md', 'w', encoding='utf-8') as file:
             file.write(updated_readme)
