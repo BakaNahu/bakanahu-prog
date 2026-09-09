@@ -58,25 +58,25 @@
 <table align="center">
   <tr>
     <td align="center" width="160" style="border: 2px solid #ff7b00; background-color: #fff4e6; border-radius: 10px; padding: 10px;">
-      <img src="https://digi-api.com/images/digimon/w/V-dramon_(Black).png" width="90" alt="V-dramon (Black)"><br>
-      <h3 style="color: #cc6200; margin: 8px 0;">V-dramon (Black)</h3>
-      <sub><b>Nivel:</b> Adult</sub><br>
-      <sub><b>Tipo:</b> Mythical Dragon</sub><br>
+      <img src="https://digi-api.com/images/digimon/w/Rook_Chessmon_(Black).png" width="90" alt="Rook Chessmon (Black)"><br>
+      <h3 style="color: #cc6200; margin: 8px 0;">Rook Chessmon (Black)</h3>
+      <sub><b>Nivel:</b> Perfect</sub><br>
+      <sub><b>Tipo:</b> Puppet</sub><br>
       <sub><b>Atributo:</b> Virus</sub>
     </td>
     <td align="center" width="160" style="border: 2px solid #ff7b00; background-color: #fff4e6; border-radius: 10px; padding: 10px;">
-      <img src="https://digi-api.com/images/digimon/w/Yanmamon.png" width="90" alt="Yanmamon"><br>
-      <h3 style="color: #cc6200; margin: 8px 0;">Yanmamon</h3>
-      <sub><b>Nivel:</b> Adult</sub><br>
-      <sub><b>Tipo:</b> Insect</sub><br>
+      <img src="https://digi-api.com/images/digimon/w/Chimairamon.png" width="90" alt="Chimairamon"><br>
+      <h3 style="color: #cc6200; margin: 8px 0;">Chimairamon</h3>
+      <sub><b>Nivel:</b> Perfect</sub><br>
+      <sub><b>Tipo:</b> Composite</sub><br>
       <sub><b>Atributo:</b> Data</sub>
     </td>
     <td align="center" width="160" style="border: 2px solid #ff7b00; background-color: #fff4e6; border-radius: 10px; padding: 10px;">
-      <img src="https://digi-api.com/images/digimon/w/Cardmon_U2.png" width="90" alt="Cardmon U2"><br>
-      <h3 style="color: #cc6200; margin: 8px 0;">Cardmon U2</h3>
-      <sub><b>Nivel:</b> Adult</sub><br>
-      <sub><b>Tipo:</b> Card</sub><br>
-      <sub><b>Atributo:</b> ???</sub>
+      <img src="https://digi-api.com/images/digimon/w/Betamon.png" width="90" alt="Betamon"><br>
+      <h3 style="color: #cc6200; margin: 8px 0;">Betamon</h3>
+      <sub><b>Nivel:</b> Child</sub><br>
+      <sub><b>Tipo:</b> Amphibian</sub><br>
+      <sub><b>Atributo:</b> Virus</sub>
     </td>
   </tr>
 </table>
